@@ -53,9 +53,6 @@ class MainWin(QWidget): # kelas turunan QWidget
         self.resize(win_width, win_height) # resize main window dengan ukuran win_width dan win_height
         self.move(win_x, win_y) # setel lokasi main window ke x=  win_x dan y = win_y
 
-def main():
-    app = QApplication([]) # buat aplikasi
-    mw = MainWin() # panggil kelas untuk mainwindow (menampilkan main window)
-    app.exec_() # setelan agar app berjalan terus
-
-main()
+app = QApplication([]) # buat aplikasi
+mw = MainWin() # panggil kelas untuk mainwindow (menampilkan main window)
+app.exec_() # setelan agar app berjalan terus
